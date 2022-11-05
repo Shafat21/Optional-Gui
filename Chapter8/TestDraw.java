@@ -1,11 +1,10 @@
-
 import javax.swing.JFrame;
 
 public class TestDraw
 {
    public static void main( String args[] )
    {
-      DrawPanel panel = new DrawPanel();      
+      DrawPanel2 panel = new DrawPanel2();      
       JFrame application = new JFrame();
       
       application.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );

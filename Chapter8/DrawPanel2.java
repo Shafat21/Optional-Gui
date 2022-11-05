@@ -1,11 +1,11 @@
 import java.awt.Color;
 import java.awt.Graphics;
-import java.util.Random;
+import java.security.SecureRandom;
 import javax.swing.JPanel;
 
 public class DrawPanel2 extends JPanel
 {
-    private Random randomNumbers = new Random();   
+    private SecureRandom randomNumbers = new SecureRandom();   
     private MyLine lines[];
 
     public DrawPanel2()
@@ -16,7 +16,6 @@ public class DrawPanel2 extends JPanel
 
         for ( int count = 0; count < lines.length; count++ )
         {
-
             int x1 = randomNumbers.nextInt( 300 );
             int y1 = randomNumbers.nextInt( 300 );
             int x2 = randomNumbers.nextInt( 300 );
