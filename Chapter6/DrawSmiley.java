@@ -18,8 +18,14 @@ public class DrawSmiley extends JPanel
         // Mouth
         g.fillOval(50, 110, 120, 60);
 
+
+
         g.setColor(Color.YELLOW); 
         g.fillRect(50, 110, 120, 30);
         g.fillOval(50, 120, 120, 40);
+        // Mouth
+        g.setColor(Color.BLACK); 
+        g.fillRect(100, 110, 10, 10);
+        g.fillOval(100, 110, 15, 15);
     }
 }
