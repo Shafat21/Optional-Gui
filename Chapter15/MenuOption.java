@@ -7,7 +7,7 @@ public enum MenuOption
 
     private final int value;
 
-    MenuOption( int value )
+    private MenuOption( int value )
     {
         this.value = value;
     }
