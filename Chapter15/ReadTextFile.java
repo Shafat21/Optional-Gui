@@ -9,9 +9,9 @@ public class ReadTextFile
    private static Scanner input;
    public static void main(String[] args) 
    {
-       openFile();
-       readRecords();
-       closeFile();
+      openFile();
+      readRecords();
+      closeFile();
    }
 
    public static void openFile()
