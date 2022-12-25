@@ -17,7 +17,7 @@ public class CreateSequentialFile
 
     public static void openFile()
     {
-        try // open file
+        try
         {
             output = new ObjectOutputStream(
                 new FileOutputStream( "clients.ser" ) );
@@ -32,13 +32,12 @@ public class CreateSequentialFile
     public static void addRecords()
     {
         try (Scanner input = new Scanner( System.in )) {
-            System.out.printf("%s%n%s%n? ", 
-   "Enter account number, first name, last name and balance.",
+            System.out.printf("%s%n%s%n? ", "Enter account number, first name, last name and balance.",
                 "Enter end-of-file indicator to end input.");
 
             while ( input.hasNext() )
             {
-                try // output values to file
+                try
                 {
                     Account record = new Account(input.nextInt(),
                         input.next(), input.next(), input.nextDouble());

@@ -31,7 +31,7 @@ public class CreditInquiry
                 break;
             }
             readRecords(accountType);
-            accountType = getRequest(); // get user's request
+            accountType = getRequest();
         }
     }
 
